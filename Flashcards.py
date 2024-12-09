@@ -17,7 +17,7 @@ def validar_tentativa():
         feedback_label.configure(text="Parabéns! Você acertou!", text_color="green")
         janela.after(1000, proximo_flashcard)
     else:
-        feedback_label.configure(text="errou, seu animal! tenta de novo seu bosta", text_color="red")
+        feedback_label.configure(text="Errou! Tente de novo!", text_color="red")
         enunciado.configure(text= f"Complete a palavra: {palavra[0] + "_ " * (len(palavra) - 1)}")
         
 
@@ -29,14 +29,14 @@ def proximo_flashcard():
         feedback_label.configure(text="")  # Limpa o feedback
         textbox.delete("0.0", "end")
     else:
-        feedback_label.update(text="PARABÉNS SEU ANIMALZINHO! CONSEGUIU COMPLETAR O FLASHCARDS DA RESENHA", text_color = "yellow")
+        feedback_label.update(text="PARABÉNS! VOCÊ CONSEGUIU COMPLETAR O FLASHCARDS", text_color = "yellow")
         textbox.configure(state="disabled")
-        enunciado.configure(text="SAI DAQUI! VAI SEU COCÔZINHO")
+        
 
 janela = CTk()
 janela.geometry("800x600")
 
-label = CTkLabel(master=janela, text="Bem vindo ao Flashcard da resenha", font=("Calibri", 30), text_color="#FFFAFA")
+label = CTkLabel(master=janela, text="Bem vindo ao Flashcard da ", font=("Calibri", 30), text_color="#FFFAFA")
 label.place(relx=0.5, rely=0.08, anchor="center") 
 
 
