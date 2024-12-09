@@ -36,7 +36,7 @@ def proximo_flashcard():
 janela = CTk()
 janela.geometry("800x600")
 
-label = CTkLabel(master=janela, text="Bem vindo ao Flashcard da ", font=("Calibri", 30), text_color="#FFFAFA")
+label = CTkLabel(master=janela, text="Bem vindo ao Flashcard Basicão ", font=("Calibri", 30), text_color="#FFFAFA")
 label.place(relx=0.5, rely=0.08, anchor="center") 
 
 
